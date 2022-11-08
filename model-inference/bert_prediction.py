@@ -15,12 +15,11 @@ def load_bert_model():
     model_dir = 'trained_models/'
     model_file = model_dir + 'BERT_ft_epoch7-aws.model'
     bert_model.load_state_dict(torch.load(model_file))
-    bert_model.eval()
-
+    bert_model.eva
 
 def encode_tweets(tweets):
     print(' In the encode tweets')
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')git co
     print('tokenizer')
     encoded_tweets = tokenizer.batch_encode_plus(
         tweets,
