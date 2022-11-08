@@ -74,7 +74,7 @@ The training data and test data vectorized and split into 70/30 to train the mod
     <tr>
     <tr>
         <td>0.790</td>
-        <td>0.809/td>
+        <td>0.809</td>
         <td>0.799</td>
         <td>0.796</td>
     </tr>
