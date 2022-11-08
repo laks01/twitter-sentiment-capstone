@@ -52,7 +52,8 @@ To train the models I collected the labeled data from [Sentiment Data](http://cs
 
 ### Logistics Regression Model
 
-The training data and test data vectorized and split into 70/30 to train the models. I used below metrics to evaluate the moder Performance.
+The training data and test data vectorized and split into 70/30 to train the models. I used below metrics to evaluate the model performance.After the training the model is saved using pickle. 
+
 
 #### Confusion Matrix:
 
@@ -62,22 +63,80 @@ The training data and test data vectorized and split into 70/30 to train the mod
 </center>
 
 </br>
+  
+ ### Naive Bayes
+ 
+ The training data and test data vectorized and split into 70/30 to train the Naive Bayed. 
+ 
+ #### Confusion Matrix:
+ 
+<center>
+    <img src = images/naive_bayes_cm.png width = 60%/>
+</center>
 
-### Metrics
 
- <table> 
+  
+  ### Metrics
+  
+  
+  <table> 
     <tr>
+        <th>Model</th>
         <th>Precision</th>
         <th>Recall</th>
         <th>F1 Score</th>
         <th>AUC</th>
     <tr>
+     <tr>
+        <td><b>Logistics Regression</b></td>
+        <td><b>0.790</b></td>
+        <td><b>0.809</b></td>
+        <td><b>0.799</b></td>
+        <td><b>0.796</b></td>
+    </tr>   
+        
     <tr>
-        <td>0.790</td>
-        <td>0.809</td>
-        <td>0.799</td>
-        <td>0.796</td>
+        <td><b>Naive Bayes</b></td>
+        <td><b>0.803 </b></td>
+        <td><b>0.738</b></td>
+        <td><b>0.799</b></td>
+        <td><b>0.778</b></td>
     </tr>
   </table>
   
+
+  
  
+ ## Model Inference
+ 
+ As part of model inferences to predict sentiment here are the steps:
+ 
+ <li> Preprocess the tweets </li>
+ <li> Load the model pickle file </li>
+ <li> Predict the sentiment </li>
+  
+ <center>
+    <img src = images/sentiment.png width = 60%/>
+</center>
+   
+ <br>
+
+<center>
+    <img src = images/sample_sentiment.png width = 60%/>
+</center>
+    
+    
+<br>
+
+## Next Steps
+    
+    This application trained and tested in a local computer with only 1 week roughly 10,000 tweets. This can be expanded in future to collect more tweets on a daily basis and doing further analysis to display the data in a time series.
+    
+### Architecture:
+
+Here is the architecture to scale Twitter Sentiment ML model and pipeline.
+    
+    
+<center>
+    <img src = images/architecture.png width = 100%/>
+</center>
