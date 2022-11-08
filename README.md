@@ -1,6 +1,6 @@
-# Capstone Project - Twitter Sentiment Analysis using Classification Models
+# Twitter Sentiment Analysis using Classification Models
 
-In this capstone project, a customer will learn a company sentiment based on tweets with company hashtag. For example, #TWTR/#TSLA trending positive or negative based on tweets. It allows companies to observe their reputation based of the customers tweets. The tweets provide some insights into where they should be focusing to improve their reputation.
+In this capstone project, a customer will learn a company sentiment based on tweets with company hashtag. For example, #TWTR or #TSLA trending positive or negative based on tweets. It allows companies to observe their reputation based of the customers tweets. The tweets provide some insights into where they should be focusing to improve their reputation.
 
 ## Business Objectives
 This application is built based on the CRISP-DM Framework. The following are the business objective of the application:
@@ -86,7 +86,7 @@ The training data and test data vectorized and split into 70/30 to train the mod
         <th>Recall</th>
         <th>F1 Score</th>
         <th>AUC</th>
-    <tr>
+    </tr>
      <tr>
         <td><b>Logistics Regression</b></td>
         <td><b>0.790</b></td>
@@ -115,14 +115,15 @@ The training data and test data vectorized and split into 70/30 to train the mod
  <li> Load the model pickle file </li>
  <li> Predict the sentiment </li>
   
+ <br>
  <center>
-    <img src = images/sentiment.png width = 60%/>
+    <img src = images/sentiment.png width = 80%/>
 </center>
    
  <br>
 
 <center>
-    <img src = images/sample_sentiment.png width = 60%/>
+    <img src = images/sample_sentiment.png width = 80%/>
 </center>
     
     
